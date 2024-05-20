@@ -138,11 +138,14 @@ namespace LinqTutorials
             var task16Result = LinqTasks.Task16();
 
             Console.WriteLine("Task 16:");
-            foreach (var dept in task16Result)
+            foreach (var tuple in task16Result)
             {
-                Console.WriteLine($"Deptno: {dept.Deptno}, Dname: {dept.Dname}, Loc: {dept.Loc}");
+                var emp = tuple.emp;
+                var dept = tuple.dept;
+    
+                Console.WriteLine($"Empno: {emp.Empno}, Ename: {emp.Ename}, Job: {emp.Job}, HireDate: {emp.HireDate}, Deptno: {dept?.Deptno}, Dname: {dept?.Dname}, Loc: {dept?.Loc}");
             }
-            
+
             
             
         }

@@ -12,3 +12,4 @@ C:\Users\ovsii\OneDrive\Desktop\LinqCwiczenia 2\LinqTutorials\obj\Debug\net8.0\r
 C:\Users\ovsii\OneDrive\Desktop\LinqCwiczenia 2\LinqTutorials\obj\Debug\net8.0\LinqTutorials.pdb
 C:\Users\ovsii\OneDrive\Desktop\LinqCwiczenia 2\LinqTutorials\obj\Debug\net8.0\LinqTutorials.genruntimeconfig.cache
 C:\Users\ovsii\OneDrive\Desktop\LinqCwiczenia 2\LinqTutorials\obj\Debug\net8.0\ref\LinqTutorials.dll
+C:\Users\ovsii\OneDrive\Desktop\LinqCwiczenia 2\LinqTutorials\obj\Debug\net8.0\LinqTutorials.sourcelink.json

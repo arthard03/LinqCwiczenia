@@ -395,23 +395,18 @@
 
             /// <summary>
             ///     SELECT * FROM Emps, Depts;
-            /// </summary>
-            public static IEnumerable<Dept> Task16()
-            {
-                var distinctDepts = Depts.DistinctBy(dept => dept.Deptno);
+            /// </summary> 
+            /// changed   public static IEnumerable<(Dept)> Task16() to achive desired output
 
+            public static IEnumerable<(Emp emp, Dept dept)> Task16()
+            {
                 var result = from emp in Emps
-                    join dept in distinctDepts on emp.Deptno equals dept.Deptno
-                    select new Dept
-                    {
-                        Deptno = dept.Deptno,
-                        Dname = dept.Dname,
-                        Loc = dept.Loc
-                    };
+                    join dept in Depts on emp.Deptno equals dept.Deptno into deptGroup
+                    from dept in deptGroup.DefaultIfEmpty()
+                    select (emp, dept);
 
                 return result;
             }
-
         }
 
         public static class CustomExtensionMethods
